@@ -14,9 +14,6 @@ Make a to-do list and follow the list
 
 -Save
 
-## Opening in visual studio
--Open nuget manager and restore packages
-
 ## Built With
 
 * [MahApps.Metro](https://www.nuget.org/packages/MahApps.Metro) - Metro interface
