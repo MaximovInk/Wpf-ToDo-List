@@ -14,18 +14,6 @@ Make a to-do list and follow the list
 
 -Save
 
-### Installing
-
-First compile,then
-
-The compiled file is in the folder bin\Debug
-
-Path example:
-```
- C:\...\ToDoList\bin\Debug\ToDoApp.exe
-```
-
-
 ## Built With
 
 * [MahApps.Metro](https://www.nuget.org/packages/MahApps.Metro) - Metro interface
