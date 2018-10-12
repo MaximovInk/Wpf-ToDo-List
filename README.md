@@ -19,6 +19,9 @@ Make a to-do list and follow the list
 * [MahApps.Metro](https://www.nuget.org/packages/MahApps.Metro) - Metro interface
 * [MahApps.Resources](https://www.nuget.org/packages/MahApps.Metro.Resources/) - Metro interface resoureces(icons, colors and other..)
 
+## Opening in Visual studio nuget troubles
+
+https://docs.microsoft.com/nuget/consume-packages/package-restore-troubleshooting
 
 ## License
 
