@@ -1,0 +1,121 @@
+﻿<Controls:MetroWindow x:Class="MaximovInkToDoApp.ThemesWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                      xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls"
+                      xmlns:Converters="http://metro.mahapps.com/winfx/xaml/shared"
+                      xmlns:metro="clr-namespace:MahApps.Metro;assembly=MahApps.Metro"
+                      RenderOptions.ClearTypeHint="Enabled"
+                      TextOptions.TextFormattingMode="Display"
+                      Title="Change App Style"
+                      SizeToContent="WidthAndHeight"
+                      GlowBrush="{DynamicResource AccentColorBrush}"
+                      ResizeMode="CanResizeWithGrip">
+
+	<Controls:MetroWindow.Resources>
+		<ResourceDictionary>
+			<ResourceDictionary.MergedDictionaries>
+				<ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/Blue.xaml" />
+				<ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/BaseLight.xaml" />
+			</ResourceDictionary.MergedDictionaries>
+		</ResourceDictionary>
+	</Controls:MetroWindow.Resources>
+
+	<Controls:MetroWindow.TitleTemplate>
+		<DataTemplate>
+			<TextBlock Text="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=Content, Converter={Converters:ToUpperConverter}}"
+                       TextTrimming="CharacterEllipsis"
+                       VerticalAlignment="Center"
+                       Margin="8 -1 0 0"
+                       FontSize="{DynamicResource WindowTitleFontSize}"
+                       FontFamily="{DynamicResource DefaultFont}" />
+		</DataTemplate>
+	</Controls:MetroWindow.TitleTemplate>
+
+	<Grid>
+
+		<Grid.Resources>
+			<Style TargetType="Button"
+                   BasedOn="{StaticResource MetroButton}">
+				<Setter Property="Height"
+                        Value="23" />
+				<Setter Property="Margin"
+                        Value="2" />
+			</Style>
+		</Grid.Resources>
+
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto" />
+			<RowDefinition Height="Auto" />
+		</Grid.RowDefinitions>
+
+			<Grid>
+				<Grid.RowDefinitions>
+					<RowDefinition Height="Auto" />
+					<RowDefinition Height="Auto" />
+					<RowDefinition Height="Auto" />
+				</Grid.RowDefinitions>
+
+				<UniformGrid Grid.Row="0"
+                             Columns="5">
+					<Button Content="Dark"
+                            Click="ChangeAppThemeButtonClick" />
+					<Button Content="Light"
+                            Click="ChangeAppThemeButtonClick" />
+					<Button Content="Blue"
+                            Click="ChangeAppAccentButtonClick" />
+					<Button Content="Red"
+                            Click="ChangeAppAccentButtonClick" />
+					<Button Content="Green"
+                            Click="ChangeAppAccentButtonClick" />
+					<Button Content="Purple"
+                            Click="ChangeAppAccentButtonClick" />
+					<Button Content="Orange"
+                            Click="ChangeAppAccentButtonClick" />
+					<Button Content="Lime"
+                            Click="ChangeAppAccentButtonClick" />
+					<Button Content="Emerald"
+                            Click="ChangeAppAccentButtonClick" />
+					<Button Content="Teal"
+                            Click="ChangeAppAccentButtonClick" />
+					<Button Content="Cyan"
+                            Click="ChangeAppAccentButtonClick" />
+					<Button Content="Cobalt"
+                            Click="ChangeAppAccentButtonClick" />
+					<Button Content="Indigo"
+                            Click="ChangeAppAccentButtonClick" />
+					<Button Content="Violet"
+                            Click="ChangeAppAccentButtonClick" />
+					<Button Content="Pink"
+                            Click="ChangeAppAccentButtonClick" />
+					<Button Content="Magenta"
+                            Click="ChangeAppAccentButtonClick" />
+					<Button Content="Crimson"
+                            Click="ChangeAppAccentButtonClick" />
+					<Button Content="Amber"
+                            Click="ChangeAppAccentButtonClick" />
+					<Button Content="Yellow"
+                            Click="ChangeAppAccentButtonClick" />
+					<Button Content="Brown"
+                            Click="ChangeAppAccentButtonClick" />
+					<Button Content="Olive"
+                            Click="ChangeAppAccentButtonClick" />
+					<Button Content="Steel"
+                            Click="ChangeAppAccentButtonClick" />
+					<Button Content="Mauve"
+                            Click="ChangeAppAccentButtonClick" />
+					<Button Content="Taupe"
+                            Click="ChangeAppAccentButtonClick" />
+					<Button Content="Sienna"
+                            Click="ChangeAppAccentButtonClick" />
+				</UniformGrid>
+
+				<UniformGrid Grid.Row="1"
+                             Columns="5"/>
+
+				<UniformGrid Grid.Row="2" Margin="5" Columns="2" Rows="2"/>
+			</Grid>
+
+
+	</Grid>
+
+</Controls:MetroWindow>
