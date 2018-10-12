@@ -16,6 +16,8 @@ Make a to-do list and follow the list
 
 ### Installing
 
+First compile,then
+
 The compiled file is in the folder bin\Debug
 
 Path example:
